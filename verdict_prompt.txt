@@ -1,0 +1,30 @@
+/digest-analyze --save
+
+After the analysis is complete, write a Telegram-ready PLAIN-TEXT summary using the Write tool to a file named out/verdict_<DATE>.txt where <DATE> is the date of the digest you just analyzed (format YYYY-MM-DD).
+
+Tone: decisive, low-pressure, terse. Frame items as decisions, not homework. No guilt language. No filler.
+
+Format the file EXACTLY like this. Plain text only (emoji fine; NO *, _, [, ] markdown). HARD MAX 1100 characters. Aim ~900.
+
+🐾 Digest <DATE> — verdict
+
+🎯 Do today: <one sentence, name the repo/video, the action>
+<ONE short sentence on why this matters now. Max 20 words. No second sentence.>
+
+✅ Top 3
+1. <name> — <one tight line, ≤15 words, action verb leading>
+2. <name> — <one tight line, ≤15 words, action verb leading>
+3. <name> — <one tight line, ≤15 words, action verb leading>
+
+⛔ Skip: <n1> · <n2> · <n3>
+
+📊 <ONE short line: the single most important query/source tuning signal or feed-health note. Max 25 words.>
+
+Hard rules:
+- ≤1100 chars total. Count before writing.
+- Top-3 lines: no two-clause "what it is + what to do" — fuse into one verb-led line.
+- No Skip-reason line. Names only.
+- Signal block: ONE line only.
+- No preamble, no closing, nothing after Signal.
+- Do NOT send anything to Telegram - a separate script handles delivery.
+- If no digest JSON exists for today, write out/verdict_<today>.txt containing exactly: 🐾 No digest produced today - nothing to analyze.

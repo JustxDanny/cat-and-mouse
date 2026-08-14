@@ -1,0 +1,182 @@
+{
+  "_note": "Twice-weekly deep dive (Tue+Sat 11:00). One category on purpose — the digest clusters everything into THEMES and ships one theme per fire. Infra/VPN removed 2026-08-04 (Daniel: not interested any more); the old block lives in git history.",
+  "reddit_enabled": false,
+  "_reddit_note": "Disabled 2026-08-04, NOT a missing credential. Reddit killed self-serve script apps: the create-app button now redirects to the Responsible Builder Policy, and their API wiki gates new Data API apps to 'a valid moderation use case'. A personal read-only digest is not one, and the policy forbids misrepresenting why you want data. Flip to true only if Reddit is ever granted properly — the fetch code still works.",
+  "categories": {
+    "ai_craft": {
+      "title": "AI Craft",
+      "emoji": "🧠",
+      "gh_limit": 14,
+      "yt_limit": 8,
+      "rd_limit": 12,
+      "repo_activity_limit": 10,
+      "per_repo_cap": 3,
+      "github_repos": [
+        "anthropics/claude-code",
+        "anthropics/claude-agent-sdk-python",
+        "modelcontextprotocol/servers",
+        "modelcontextprotocol/modelcontextprotocol",
+        "openai/codex",
+        "cline/cline",
+        "ollama/ollama",
+        "ggml-org/llama.cpp"
+      ],
+      "github_queries": [
+        "context engineering llm",
+        "llm token optimization",
+        "prompt caching",
+        "claude code skill plugin",
+        "subagent orchestration",
+        "mcp server",
+        "repo context map agent",
+        "ai ui generation design"
+      ],
+      "youtube_creators": [
+        "indydevdan",
+        "AIJasonZ",
+        "ColeMedin",
+        "samwitteveenai",
+        "rileybrown"
+      ],
+      "reddit_subreddits": [
+        "ClaudeAI",
+        "LocalLLaMA",
+        "AI_Agents",
+        "ChatGPTCoding",
+        "LLMDevs",
+        "mcp"
+      ]
+    }
+  },
+  "themes": [
+    {
+      "id": "context",
+      "label": "CONTEXT HYGIENE",
+      "emoji": "📁",
+      "lens": "how work is laid out on disk so an agent reads less to know more",
+      "keywords": [
+        "context",
+        "context window",
+        "compact",
+        "compaction",
+        "folder",
+        "directory",
+        "repo map",
+        "codebase map",
+        "index",
+        "memory",
+        "retrieval",
+        "rag",
+        "chunk",
+        "claude.md",
+        "agents.md",
+        "monorepo",
+        "file tree",
+        "summariz"
+      ]
+    },
+    {
+      "id": "tokens",
+      "label": "TOKEN ECONOMY",
+      "emoji": "💸",
+      "lens": "same output, fewer tokens — caching, routing, model choice, batching",
+      "keywords": [
+        "token",
+        "cost",
+        "cheaper",
+        "cheap",
+        "budget",
+        "prompt cach",
+        "cache",
+        "batch",
+        "quantiz",
+        "distill",
+        "small model",
+        "haiku",
+        "router",
+        "routing",
+        "throughput",
+        "latency",
+        "pricing",
+        "rate limit",
+        "usage"
+      ]
+    },
+    {
+      "id": "agents",
+      "label": "AGENT PIPELINES",
+      "emoji": "🤖",
+      "lens": "many agents wired into a pipeline that finishes work without a babysitter",
+      "keywords": [
+        "agent",
+        "subagent",
+        "sub-agent",
+        "multi-agent",
+        "orchestrat",
+        "pipeline",
+        "workflow",
+        "swarm",
+        "handoff",
+        "delegat",
+        "autonomous",
+        "background",
+        "parallel",
+        "mcp",
+        "tool use",
+        "tool call",
+        "function calling"
+      ]
+    },
+    {
+      "id": "design",
+      "label": "AI DESIGN ABILITY",
+      "emoji": "🎨",
+      "lens": "getting a model to produce interfaces that do not look templated",
+      "keywords": [
+        "design",
+        "ui",
+        "ux",
+        "frontend",
+        "component",
+        "figma",
+        "tailwind",
+        "shadcn",
+        "css",
+        "layout",
+        "typography",
+        "landing",
+        "screenshot",
+        "visual",
+        "aesthetic",
+        "theme",
+        "v0",
+        "canvas"
+      ]
+    },
+    {
+      "id": "harness",
+      "label": "HARNESS & TOOLING",
+      "emoji": "🛠",
+      "lens": "the rig around the model — hooks, skills, commands, config, terminal",
+      "keywords": [
+        "claude code",
+        "cli",
+        "terminal",
+        "hook",
+        "skill",
+        "slash command",
+        "plugin",
+        "extension",
+        "ide",
+        "vscode",
+        "config",
+        "settings",
+        "harness",
+        "wrapper",
+        "sdk",
+        "automation",
+        "devtool"
+      ]
+    }
+  ]
+}
